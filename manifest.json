@@ -1,0 +1,29 @@
+{
+  "name": "Tab listing and research",
+  "version": "0.0.1",
+  "description": "Allow to load and research a list of tabs",
+  "permissions": ["storage", "tabs", "notifications"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "assets/images/account_albums_screens_tabs-512.png",
+    "assets/css/materialize.min.css",
+    "assets/js/materialize.min.js"
+  ],
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "assets/images/account_albums_screens_tabs-512.png"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "MacCtrl+Shift+Y"
+      },
+      "description": "Opens the tab manager"
+    }
+  },
+  "manifest_version": 2
+}
