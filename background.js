@@ -6,8 +6,7 @@
 
 chrome.runtime.onInstalled.addListener(function() {
   chrome.storage.sync.set({color: '#3aa757'}, function() {
-    console.log("The color is green.");
-    chrome.windows.getAll({populate:true}, winData => {
+    /*chrome.windows.getAll({populate:true}, winData => {
         var tabs = [];
         for (var i in winData) {
           if (winData[i].focused === true) {
@@ -19,7 +18,8 @@ chrome.runtime.onInstalled.addListener(function() {
           }
         }
         console.log(tabs);
-    });
+    });*/
+    /*
     var notification = chrome.notifications.create(
         'fe434536-481d-434d-a4c8-46e2cbbac3bf',
         {
@@ -32,5 +32,6 @@ chrome.runtime.onInstalled.addListener(function() {
             console.log('notification callback has been called for notification ', notificationId);
         }
       );
+    */
   });
 });

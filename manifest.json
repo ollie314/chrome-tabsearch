@@ -1,7 +1,7 @@
 {
   "name": "Tab listing and research",
   "version": "0.0.1",
-  "description": "Allow to load and research a list of tabs",
+  "description": "Allow to load and research a list of open tabs",
   "permissions": ["storage", "tabs", "notifications"],
   "background": {
     "scripts": ["background.js"],
@@ -14,7 +14,12 @@
   ],
   "browser_action": {
     "default_popup": "index.html",
-    "default_icon": "assets/images/account_albums_screens_tabs-512.png"
+    "default_icon": {
+	"16": "assets/images/account_albums_screens_tabs-512.png",
+	"24": "assets/images/account_albums_screens_tabs-512.png",
+	"32": "assets/images/account_albums_screens_tabs-512.png"
+    },
+    "default_title": "Tab search"
   },
   "commands": {
     "_execute_browser_action": {

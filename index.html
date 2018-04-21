@@ -4,13 +4,14 @@
     <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tab manager</title>
     </head>
 
     <body>
         <nav class="light-blue lighten-1" role="navigation">
-            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Search for tabs</a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">Navbar Link</a></li>
                 </ul>
@@ -21,37 +22,22 @@
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
         </nav>
-        <div class="section no-pad-bot" id="index-banner">
-            <div class="container">
-                <br>
-                <br>
-                <h1 class="header center orange-text">Starter Template</h1>
-                <div class="row center">
-                    <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-                </div>
-                <div class="row center">
-                    <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-                </div>
-                <br>
-                <br>
-            </div>
-        </div>
         <div class="container">
             <div class="section">
-
-                <!--   Icon Section   -->
                 <div class="row">
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                            <h5 class="center">Speeds up development</h5>
-
-                            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-                        </div>
+		    <div class="col s12 m4">
+		      <div class="row">
+		        <div class="input-field col s12">
+			  <input placeholder="Search for a tab" id="search" type="text" class="autocomplete" />
+			  <label for="search">Search</label>
+		        </div>
+		      </div>
                     </div>
-                </div>
+		  </div>
+	      </div>
             </div>
         </div>
-        <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+	<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+	<script type="text/javascript" src="assets/js/tab-search.js"></script>
     </body>
 </html>
