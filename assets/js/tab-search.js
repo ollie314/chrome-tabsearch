@@ -6,13 +6,7 @@
 	  chrome.tabs.query({}, function(tabs) {
       const data = {};
       tabs.forEach(function(t) {
-		    data[t.title] = {
-          value: t.title,
-          tabId: t.id,
-          windowId: t.windowId,
-          status: t.status,
-          icon: t.favIconUrl
-		    }
+		    data[t.title] = t.favIconUrl;
       });
       let autoComplete
       const onAutocomplete = function(title) {
